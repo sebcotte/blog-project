@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <app-post-list-item
+          *ngFor="let aPost of allPosts"
+          [title]="aPost.title"
+          [content]="aPost.content"
+          [loveIts]="aPost.loveIts"
+          [created_at]="aPost.created_at">
+        </app-post-list-item>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
